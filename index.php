@@ -10,5 +10,10 @@ try {
 	$tweet = $twitter->send('The date is $date #openshifttweeter');
 } catch (TwitterException $e) {
 	echo 'Error: ' . $e->getMessage();
+	echo $consumerKey;
+	echo $consumerSecret;
+	echo $accessToken;
+	echo $accessTokenSecret;
+	echo 'End';
 } ?>
 <h1><? echo $date ?> </h1>
