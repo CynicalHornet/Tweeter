@@ -12,4 +12,4 @@ try {
 	echo 'Error: ' . $e->getMessage();
 	echo 'End';
 }
-echo '<h1>' . $date . '</h1>; 
+echo "<h1>" . $date . "</h1>"; 
