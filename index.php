@@ -7,9 +7,9 @@ $accessTokenSecret = $_ENV["ACCESSSECRET"];
 $twitter = new Twitter($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
 try {
 	$date = date('l jS \of F Y h:i:s A');
-	$tweet = $twitter->send('The date is ' . $date . '#openshifttweeter');
+	$tweet = $twitter->send('The date is ' . $date . ' #openshifttweeter');
 } catch (TwitterException $e) {
 	echo 'Error: ' . $e->getMessage();
 	echo 'End';
-} ?>
-<h1><? echo $date ?> </h1>
+}
+echo '<h1>' . $date . '</h1>; 
